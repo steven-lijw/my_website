@@ -16,7 +16,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       </div>
 
       {corner ? (
-        <p className="pointer-events-none absolute right-20 bottom-8 text-[14px] leading-[1.4] tracking-[0.15px] text-[#595959] opacity-75">
+        <p className="pointer-events-none absolute right-20 bottom-8 text-[15px] leading-[1.4] tracking-[0.15px] text-[#595959] opacity-75">
           {corner}
         </p>
       ) : null}

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <div className="flex max-w-[720px] flex-col gap-9">
+    <div className="flex max-w-[780px] flex-col gap-10">
       {projects.map((project) => (
         <article
           key={project.title}
@@ -25,13 +25,13 @@ export default function ProjectsPage() {
           </div>
 
           <div className="flex min-w-0 flex-1 flex-col gap-2.5">
-            <h2 className="text-[20px] font-medium leading-[1.25] text-ink">
+            <h2 className="text-[22px] font-medium leading-[1.25] text-ink">
               {project.title}
             </h2>
-            <p className="text-[13px] leading-[1.4] text-ink-muted opacity-65">
+            <p className="text-[15px] leading-[1.4] text-ink-muted opacity-65">
               {project.meta}
             </p>
-            <p className="text-[15px] leading-[1.55] text-ink-muted">
+            <p className="text-[17px] leading-[1.58] text-ink-muted">
               {project.description}
             </p>
             {project.href ? (
@@ -39,12 +39,12 @@ export default function ProjectsPage() {
                 href={project.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[14px] leading-[1.4] text-ink opacity-90 transition-opacity hover:opacity-100"
+                className="text-[16px] leading-[1.4] text-ink opacity-90 transition-opacity hover:opacity-100"
               >
                 {project.linkLabel}
               </a>
             ) : (
-              <span className="text-[14px] leading-[1.4] text-ink opacity-90">
+              <span className="text-[16px] leading-[1.4] text-ink opacity-90">
                 {project.linkLabel}
               </span>
             )}

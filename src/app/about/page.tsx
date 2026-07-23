@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="flex max-w-[560px] flex-col gap-4 text-[15px] leading-[1.58] tracking-[0.1px] text-ink">
+    <div className="flex max-w-[640px] flex-col gap-5 text-[18px] leading-[1.6] tracking-[0.1px] text-ink">
       {aboutParagraphs.map((paragraph) => (
         <p key={paragraph.slice(0, 40)} className="opacity-90">
           {paragraph}
