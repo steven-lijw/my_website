@@ -13,6 +13,7 @@
   --color-ink-muted: var(--color-ink-muted);
   --color-corner: var(--color-corner);
   --font-sans: var(--font-inter);
+  --font-hand: var(--font-caveat), "Segoe Print", "Comic Sans MS", cursive;
 }
 
 html {

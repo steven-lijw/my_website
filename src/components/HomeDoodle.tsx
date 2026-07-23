@@ -4,19 +4,14 @@ import Image from "next/image";
 import { home } from "@/data/content";
 
 /**
- * Composition: thought bubble sits upper-left of the figure;
- * bubble trail (bottom-right of the cloud) points toward the head.
+ * Thought bubble upper-left of the figure; trail aims at the head.
+ * Bubble outline from Figma; copy is live HTML in a casual hand font.
  */
 export function HomeDoodle() {
   return (
-    <div className="home-doodle absolute right-2 bottom-2 w-[min(520px,54vw)] overflow-visible">
-      {/*
-        Relative stage so bubble can sit NW of the person.
-        Person anchors bottom-right; bubble offsets up-left.
-      */}
+    <div className="home-doodle absolute right-2 bottom-2 w-[min(560px,56vw)] overflow-visible">
       <div className="relative ml-auto w-full">
-        {/* Person first — defines the stage size */}
-        <div className="home-doodle__person relative z-10 ml-auto w-[78%] overflow-visible">
+        <div className="home-doodle__person relative z-10 ml-auto w-[74%] overflow-visible">
           <Image
             src="/illustrations/home-doodle.png"
             alt="Stick figure thinking at a desk"
@@ -27,29 +22,45 @@ export function HomeDoodle() {
           />
         </div>
 
-        {/*
-          Bubble upper-left of the figure:
-          - right edge of bubble near head
-          - bottom trail dots aim at head's upper-left
-        */}
         <div
-          className="home-doodle__bubble absolute z-20 origin-bottom-right"
+          className="home-doodle__bubble absolute z-20"
           style={{
-            width: "68%",
-            /* sit left of the person block (person is 78% right-aligned) */
-            right: "52%",
-            /* one body-height higher than the head-adjacent placement */
+            width: "82%",
+            right: "48%",
             bottom: "72%",
           }}
         >
-          <Image
-            src="/illustrations/thought-bubble.png"
-            alt={home.bubble}
-            width={696}
-            height={368}
-            className="h-auto w-full select-none"
-            priority
-          />
+          <div className="relative w-full">
+            {/* cloud outline */}
+            <Image
+              src="/illustrations/bubble-shape.svg"
+              alt=""
+              width={320}
+              height={110}
+              className="h-auto w-full select-none"
+              priority
+              aria-hidden
+            />
+
+            {/* handwritten copy centered in the cloud */}
+            <p
+              className="pointer-events-none absolute inset-x-[12%] top-[18%] bottom-[28%] flex items-center justify-center text-center font-hand text-[clamp(1.15rem,2.1vw,1.55rem)] leading-[1.25] font-medium tracking-[0.01em] text-ink/90"
+              aria-hidden={false}
+            >
+              {home.bubble}
+            </p>
+
+            {/* trail dots — bottom-right of cloud, toward the head */}
+            <Image
+              src="/illustrations/bubble-trail.svg"
+              alt=""
+              width={36}
+              height={48}
+              className="absolute right-[2%] bottom-[-18%] h-auto w-[11%] select-none"
+              priority
+              aria-hidden
+            />
+          </div>
         </div>
       </div>
     </div>
