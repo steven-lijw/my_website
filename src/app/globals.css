@@ -35,6 +35,22 @@ a {
   text-decoration: none;
 }
 
+/* Wordmark hover: soft crossfade (duration also via Tailwind) */
+.site-wordmark:focus-visible {
+  outline: 1.5px solid var(--color-ink);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-wordmark__label,
+  .site-wordmark__home {
+    transition: opacity 0.12s ease !important;
+    filter: none !important;
+    transform: none !important;
+  }
+}
+
 /* —— Home doodle motion (Figma: 4.5s ease-in-out loop) —— */
 
 .home-doodle {
