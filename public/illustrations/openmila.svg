@@ -1,12 +1,8 @@
 <svg width="200" height="140" viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="200" height="140" fill="#F5F5F5"/>
 <g id="Desktop / Projects">
-<rect width="1440" height="900" transform="translate(-360 -64)" fill="white"/>
 <g id="Content / Projects">
 <g id="Projects list">
-<rect width="720" height="383" fill="white"/>
 <g id="Project / OpenMila">
-<rect width="720" height="162" fill="white"/>
 <g id="media / canvas doodle">
 <g id="canvas-screen">
 <path id="Vector" d="M14 18C14 12 18 10 26 10L174 12C182 12 186 16 186 22L184 118C184 124 180 128 172 128L26 126C18 126 14 122 14 116V18Z" fill="white" stroke="#111111" stroke-width="1.4" stroke-linejoin="round"/>
