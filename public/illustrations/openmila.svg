@@ -1,0 +1,53 @@
+<svg width="200" height="140" viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="140" fill="#F5F5F5"/>
+<g id="Desktop / Projects">
+<rect width="1440" height="900" transform="translate(-360 -64)" fill="white"/>
+<g id="Content / Projects">
+<g id="Projects list">
+<rect width="720" height="383" fill="white"/>
+<g id="Project / OpenMila">
+<rect width="720" height="162" fill="white"/>
+<g id="media / canvas doodle">
+<g id="canvas-screen">
+<path id="Vector" d="M14 18C14 12 18 10 26 10L174 12C182 12 186 16 186 22L184 118C184 124 180 128 172 128L26 126C18 126 14 122 14 116V18Z" fill="white" stroke="#111111" stroke-width="1.4" stroke-linejoin="round"/>
+<path id="Vector_2" d="M14 30L186 32" stroke="#111111" stroke-width="1.15" stroke-linecap="round"/>
+<path id="Vector_3" d="M26 23C27.1046 23 28 22.1046 28 21C28 19.8954 27.1046 19 26 19C24.8954 19 24 19.8954 24 21C24 22.1046 24.8954 23 26 23Z" stroke="#111111" stroke-width="1.1"/>
+<path id="Vector_4" d="M36 23C37.1046 23 38 22.1046 38 21C38 19.8954 37.1046 19 36 19C34.8954 19 34 19.8954 34 21C34 22.1046 34.8954 23 36 23Z" stroke="#111111" stroke-width="1.1"/>
+<path id="Vector_5" d="M46 23C47.1046 23 48 22.1046 48 21C48 19.8954 47.1046 19 46 19C44.8954 19 44 19.8954 44 21C44 22.1046 44.8954 23 46 23Z" stroke="#111111" stroke-width="1.1"/>
+<path id="Vector_6" opacity="0.22" d="M28 48V116" stroke="#111111" stroke-width="0.6" stroke-linecap="round"/>
+<path id="Vector_7" opacity="0.18" d="M58 46V116" stroke="#111111" stroke-width="0.6" stroke-linecap="round"/>
+<path id="Vector_8" opacity="0.18" d="M88 46V116" stroke="#111111" stroke-width="0.6" stroke-linecap="round"/>
+<path id="Vector_9" opacity="0.18" d="M118 46V116" stroke="#111111" stroke-width="0.6" stroke-linecap="round"/>
+<path id="Vector_10" opacity="0.18" d="M148 46V116" stroke="#111111" stroke-width="0.6" stroke-linecap="round"/>
+<path id="Vector_11" opacity="0.16" d="M22 70H172" stroke="#111111" stroke-width="0.6" stroke-linecap="round"/>
+<path id="Vector_12" opacity="0.16" d="M22 95H172" stroke="#111111" stroke-width="0.6" stroke-linecap="round"/>
+<path id="Vector_13" d="M62 58C78 52 88 56 100 62" stroke="#111111" stroke-width="1.15" stroke-linecap="round"/>
+<path id="Vector_14" d="M128 70C138 78 142 88 136 98" stroke="#111111" stroke-width="1.15" stroke-linecap="round"/>
+<path id="Vector_15" opacity="0.85" d="M48 72C52 90 70 102 96 104" stroke="#111111" stroke-width="1.1" stroke-linecap="round"/>
+<path id="Vector_16" d="M148 62C162 68 166 78 160 90" stroke="#111111" stroke-width="1.1" stroke-linecap="round"/>
+<path id="Vector_17" d="M30 48L62 46L64 72L32 74L30 48Z" fill="white" stroke="#111111" stroke-width="1.25" stroke-linejoin="round"/>
+<path id="Vector_18" d="M36 54L56 53" stroke="#111111" stroke-linecap="round"/>
+<path id="Vector_19" opacity="0.7" d="M36 60L52 59" stroke="#111111" stroke-width="0.9" stroke-linecap="round"/>
+<path id="Vector_20" opacity="0.55" d="M36 65L48 64" stroke="#111111" stroke-width="0.9" stroke-linecap="round"/>
+<path id="Vector_21" d="M102 50L138 48L140 74L104 76L102 50Z" fill="white" stroke="#111111" stroke-width="1.25" stroke-linejoin="round"/>
+<path id="Vector_22" d="M110 56L130 55" stroke="#111111" stroke-linecap="round"/>
+<path id="Vector_23" opacity="0.7" d="M110 62L126 61" stroke="#111111" stroke-width="0.9" stroke-linecap="round"/>
+<path id="Vector_24" opacity="0.55" d="M110 67L122 66" stroke="#111111" stroke-width="0.9" stroke-linecap="round"/>
+<path id="Vector_25" d="M96 96L134 94L136 118L98 120L96 96Z" fill="white" stroke="#111111" stroke-width="1.25" stroke-linejoin="round"/>
+<path id="Vector_26" d="M104 102L126 101" stroke="#111111" stroke-linecap="round"/>
+<path id="Vector_27" opacity="0.7" d="M104 108L120 107" stroke="#111111" stroke-width="0.9" stroke-linecap="round"/>
+<path id="Vector_28" d="M152 88L174 86L176 106L154 108L152 88Z" fill="white" stroke="#111111" stroke-width="1.2" stroke-linejoin="round"/>
+<path id="Vector_29" d="M158 94L170 93" stroke="#111111" stroke-width="0.9" stroke-linecap="round"/>
+<path id="Vector_30" opacity="0.65" d="M158 99L166 98" stroke="#111111" stroke-width="0.85" stroke-linecap="round"/>
+<path id="Vector_31" d="M62 59.6C62.8837 59.6 63.6 58.8837 63.6 58C63.6 57.1164 62.8837 56.4 62 56.4C61.1164 56.4 60.4 57.1164 60.4 58C60.4 58.8837 61.1164 59.6 62 59.6Z" fill="#111111"/>
+<path id="Vector_32" d="M102 63.6C102.884 63.6 103.6 62.8837 103.6 62C103.6 61.1164 102.884 60.4 102 60.4C101.116 60.4 100.4 61.1164 100.4 62C100.4 62.8837 101.116 63.6 102 63.6Z" fill="#111111"/>
+<path id="Vector_33" d="M128 71.5C128.828 71.5 129.5 70.8284 129.5 70C129.5 69.1716 128.828 68.5 128 68.5C127.172 68.5 126.5 69.1716 126.5 70C126.5 70.8284 127.172 71.5 128 71.5Z" fill="#111111"/>
+<path id="Vector_34" d="M136 99.5C136.828 99.5 137.5 98.8284 137.5 98C137.5 97.1716 136.828 96.5 136 96.5C135.172 96.5 134.5 97.1716 134.5 98C134.5 98.8284 135.172 99.5 136 99.5Z" fill="#111111"/>
+<path id="Vector_35" d="M152 91.4C152.773 91.4 153.4 90.7732 153.4 90C153.4 89.2268 152.773 88.6 152 88.6C151.227 88.6 150.6 89.2268 150.6 90C150.6 90.7732 151.227 91.4 152 91.4Z" fill="#111111"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>
