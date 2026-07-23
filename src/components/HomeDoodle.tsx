@@ -38,8 +38,8 @@ export function HomeDoodle() {
             width: "68%",
             /* sit left of the person block (person is 78% right-aligned) */
             right: "52%",
-            /* float above the head area of the person image */
-            bottom: "48%",
+            /* one body-height higher than the head-adjacent placement */
+            bottom: "72%",
           }}
         >
           <Image
