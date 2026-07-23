@@ -4,14 +4,15 @@ import Image from "next/image";
 import { home } from "@/data/content";
 
 /**
- * Home illustration with motion matching Figma Desktop / Home (4.5s loop):
- * - thinking-person: subtle rotate + vertical bob
- * - thought bubble: float + gentle tilt around 2.5deg
+ * Home illustration with motion matching Figma Desktop / Home (4.5s loop).
+ * Bubble sits above-left of the figure so the head stays fully visible;
+ * trail dots connect visually without covering the person.
  */
 export function HomeDoodle() {
   return (
-    <div className="home-doodle absolute right-0 bottom-4 w-[min(520px,52vw)]">
-      <div className="home-doodle__bubble absolute bottom-[42%] left-[-6%] z-10 w-[88%] origin-bottom-right">
+    <div className="home-doodle absolute right-2 bottom-2 flex w-[min(480px,50vw)] flex-col items-end overflow-visible">
+      {/* Bubble above the figure — not stacked over the head */}
+      <div className="home-doodle__bubble relative z-0 mr-[8%] w-[78%] origin-bottom-right">
         <Image
           src="/illustrations/thought-bubble.png"
           alt={home.bubble}
@@ -22,7 +23,8 @@ export function HomeDoodle() {
         />
       </div>
 
-      <div className="home-doodle__person relative ml-auto w-[82%]">
+      {/* Pull person up slightly so trail meets the head, without covering it */}
+      <div className="home-doodle__person relative z-10 -mt-[6%] mr-0 w-[86%] overflow-visible">
         <Image
           src="/illustrations/home-doodle.png"
           alt="Stick figure thinking at a desk"

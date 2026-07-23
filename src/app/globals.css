@@ -38,11 +38,15 @@ a {
 
 .home-doodle {
   animation: home-enter 0.9s ease-out both;
+  /* room for bob/tilt so nothing clips against the viewport edge */
+  padding-top: 8px;
+  padding-right: 8px;
 }
 
 .home-doodle__person {
   animation: home-person 4.5s ease-in-out infinite;
-  transform-origin: 50% 80%;
+  /* pivot near the seat so the head stays clear of the bubble */
+  transform-origin: 50% 85%;
   will-change: transform;
 }
 
@@ -62,41 +66,41 @@ a {
   }
 }
 
-/* thinking-person: rotate [0, 1.2, -0.9, 0], y [0, -3, 1.5, 0] */
+/* thinking-person: subtle sway — keep amplitude low so head never hits bubble */
 @keyframes home-person {
   0% {
     transform: rotate(0deg) translateY(0);
   }
   24.44% {
-    transform: rotate(1.2deg) translateY(-4px);
+    transform: rotate(0.9deg) translateY(-3px);
   }
   31.11% {
-    transform: rotate(0.8deg) translateY(-3px);
+    transform: rotate(0.5deg) translateY(-2px);
   }
   57.78% {
-    transform: rotate(-0.9deg) translateY(2px);
+    transform: rotate(-0.7deg) translateY(1px);
   }
   62.22% {
-    transform: rotate(-0.5deg) translateY(1.5px);
+    transform: rotate(-0.4deg) translateY(1px);
   }
   100% {
     transform: rotate(0deg) translateY(0);
   }
 }
 
-/* Thought bubble: rotate [2.5, 3.6, 1.7, 2.5], y [0, -3, 0] */
+/* Thought bubble floats above the figure */
 @keyframes home-bubble {
   0% {
     transform: rotate(2.5deg) translateY(0);
   }
   35.56% {
-    transform: rotate(3.6deg) translateY(-4px);
+    transform: rotate(3.4deg) translateY(-4px);
   }
   51.11% {
-    transform: rotate(2.8deg) translateY(-5px);
+    transform: rotate(2.7deg) translateY(-5px);
   }
   71.11% {
-    transform: rotate(1.7deg) translateY(-2px);
+    transform: rotate(1.8deg) translateY(-2px);
   }
   100% {
     transform: rotate(2.5deg) translateY(0);
