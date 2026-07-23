@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { education } from "@/data/content";
+import { HoverSwap } from "@/components/HoverSwap";
+import { education, educationHeadings } from "@/data/content";
 
 export const metadata: Metadata = {
   title: "Education",
@@ -8,9 +9,12 @@ export const metadata: Metadata = {
 export default function EducationPage() {
   return (
     <div className="flex max-w-[660px] flex-col">
-      <h1 className="text-[20px] font-medium leading-[1.3] text-ink">
-        Education
-      </h1>
+      <HoverSwap
+        as="h1"
+        defaultText={educationHeadings.education.default}
+        hoverText={educationHeadings.education.hover}
+        className="text-[20px] font-medium leading-[1.3] text-ink"
+      />
 
       <div className="mt-4 flex flex-col gap-6">
         {education.schools.map((school) => (
@@ -25,9 +29,12 @@ export default function EducationPage() {
         ))}
       </div>
 
-      <h2 className="mt-12 text-[20px] font-medium leading-[1.3] text-ink">
-        Skills
-      </h2>
+      <HoverSwap
+        as="h2"
+        defaultText={educationHeadings.skills.default}
+        hoverText={educationHeadings.skills.hover}
+        className="mt-12 text-[20px] font-medium leading-[1.3] text-ink"
+      />
 
       <div className="mt-4 flex flex-col gap-4">
         {education.skills.map((skill) => (

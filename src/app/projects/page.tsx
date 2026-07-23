@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { HoverSwap } from "@/components/HoverSwap";
 import { projects } from "@/data/content";
 
 export const metadata: Metadata = {
@@ -10,10 +11,7 @@ export default function ProjectsPage() {
   return (
     <div className="flex max-w-[780px] flex-col gap-10">
       {projects.map((project) => (
-        <article
-          key={project.title}
-          className="flex items-start gap-8"
-        >
+        <article key={project.title} className="flex items-start gap-8">
           <div className="relative h-[140px] w-[200px] shrink-0 overflow-hidden">
             <Image
               src={project.image}
@@ -25,9 +23,12 @@ export default function ProjectsPage() {
           </div>
 
           <div className="flex min-w-0 flex-1 flex-col gap-2.5">
-            <h2 className="text-[22px] font-medium leading-[1.25] text-ink">
-              {project.title}
-            </h2>
+            <HoverSwap
+              as="h2"
+              defaultText={project.title}
+              hoverText={project.titleHover}
+              className="text-[22px] font-medium leading-[1.25] text-ink"
+            />
             <p className="text-[15px] leading-[1.4] text-ink-muted opacity-65">
               {project.meta}
             </p>

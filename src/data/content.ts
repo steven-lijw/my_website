@@ -119,6 +119,7 @@ export const works = [
 export const projects = [
   {
     title: "OpenMila",
+    titleHover: "my daily thinking space",
     meta: "Open-source canvas product  ·  May 2026 - Present",
     description:
       "Local-first visual canvas with React, TypeScript, and Vite. File System Access API + IndexedDB for a fully offline, zero-login experience - no backend. Built for clarity-first spatial thinking.",
@@ -129,6 +130,7 @@ export const projects = [
   },
   {
     title: "Mealry",
+    titleHover: "just vibes… maybe a business later",
     meta: "Calm meal calendar (iOS)  ·  Jul 2026 - Present  ·  Coming soon",
     description:
       "Photo-first meal calendar for everyday eating - snap a plate, keep it on a calendar, and get a gentle buddy-style nudge before your next meal. Local-first personal data; AI only for soft guidance, not calorie math or judgment.",
@@ -138,6 +140,11 @@ export const projects = [
     imageAlt: "Mealry doodle of person photographing a meal",
   },
 ];
+
+export const educationHeadings = {
+  education: { default: "Education", hover: "always learningggg" },
+  skills: { default: "Skills", hover: "trying new stuff always" },
+};
 
 export const contact = {
   title: "Say hi.",
