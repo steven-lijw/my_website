@@ -6,12 +6,16 @@ import { home } from "@/data/content";
 /**
  * Thought bubble upper-left of the figure; trail aims at the head.
  * Bubble outline from Figma; copy is live HTML in a casual hand font.
+ * Mobile: full-width bottom composition so the doodle does not crowd the nav.
  */
 export function HomeDoodle() {
   return (
-    <div className="home-doodle absolute right-2 bottom-2 w-[min(560px,56vw)] overflow-visible">
+    <div className="home-doodle relative mx-auto mt-10 w-full max-w-[380px] overflow-visible px-1 sm:mt-12 sm:max-w-[480px] md:absolute md:right-2 md:bottom-2 md:mx-0 md:mt-0 md:w-[min(560px,56vw)] md:max-w-none md:px-0">
       <div className="relative ml-auto w-full">
-        <div className="home-doodle__person relative z-10 ml-auto w-[74%] overflow-visible">
+        {/* reserve vertical space so the absolute bubble does not sit under the nav */}
+        <div className="h-[4.5rem] w-full sm:h-[5.5rem] md:hidden" aria-hidden />
+
+        <div className="home-doodle__person relative z-10 ml-auto w-[78%] overflow-visible sm:w-[74%]">
           <Image
             src="/illustrations/home-doodle.png"
             alt="Stick figure thinking at a desk"
@@ -22,14 +26,7 @@ export function HomeDoodle() {
           />
         </div>
 
-        <div
-          className="home-doodle__bubble absolute z-20"
-          style={{
-            width: "82%",
-            right: "48%",
-            bottom: "72%",
-          }}
-        >
+        <div className="home-doodle__bubble absolute bottom-[70%] left-0 z-20 w-[72%] sm:left-auto sm:right-[48%] sm:bottom-[72%] sm:w-[82%] md:w-[82%]">
           <div className="relative w-full">
             {/* cloud outline */}
             <Image
@@ -44,7 +41,7 @@ export function HomeDoodle() {
 
             {/* handwritten copy centered in the cloud */}
             <p
-              className="pointer-events-none absolute inset-x-[12%] top-[18%] bottom-[28%] flex items-center justify-center text-center font-hand text-[clamp(1.15rem,2.1vw,1.55rem)] leading-[1.25] font-medium tracking-[0.01em] text-ink/90"
+              className="pointer-events-none absolute inset-x-[10%] top-[16%] bottom-[26%] flex items-center justify-center text-center font-hand text-[clamp(0.92rem,3.4vw,1.35rem)] leading-[1.25] font-medium tracking-[0.01em] text-ink/90 sm:inset-x-[12%] sm:top-[18%] sm:bottom-[28%] sm:text-[clamp(1.15rem,2.1vw,1.55rem)]"
               aria-hidden={false}
             >
               {home.bubble}

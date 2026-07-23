@@ -11,8 +11,11 @@ export default function ProjectsPage() {
   return (
     <div className="flex max-w-[780px] flex-col gap-10">
       {projects.map((project) => (
-        <article key={project.title} className="flex items-start gap-8">
-          <div className="relative h-[140px] w-[200px] shrink-0 overflow-hidden">
+        <article
+          key={project.title}
+          className="flex flex-col items-start gap-4 sm:flex-row sm:gap-8"
+        >
+          <div className="relative h-[120px] w-full max-w-[200px] shrink-0 overflow-hidden sm:h-[140px] sm:w-[200px]">
             <Image
               src={project.image}
               alt={project.imageAlt}
@@ -27,12 +30,12 @@ export default function ProjectsPage() {
               as="h2"
               defaultText={project.title}
               hoverText={project.titleHover}
-              className="text-[22px] font-medium leading-[1.25] text-ink"
+              className="text-[20px] font-medium leading-[1.25] text-ink sm:text-[22px]"
             />
-            <p className="text-[15px] leading-[1.4] text-ink-muted opacity-65">
+            <p className="text-[14px] leading-[1.4] text-ink-muted opacity-65 sm:text-[15px]">
               {project.meta}
             </p>
-            <p className="text-[17px] leading-[1.58] text-ink-muted">
+            <p className="text-[16px] leading-[1.58] text-ink-muted sm:text-[17px]">
               {project.description}
             </p>
             {project.href ? (
@@ -40,12 +43,12 @@ export default function ProjectsPage() {
                 href={project.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[16px] leading-[1.4] text-ink opacity-90 transition-opacity hover:opacity-100"
+                className="break-all text-[15px] leading-[1.4] text-ink opacity-90 transition-opacity hover:opacity-100 sm:break-normal sm:text-[16px]"
               >
                 {project.linkLabel}
               </a>
             ) : (
-              <span className="text-[16px] leading-[1.4] text-ink opacity-90">
+              <span className="text-[15px] leading-[1.4] text-ink opacity-90 sm:text-[16px]">
                 {project.linkLabel}
               </span>
             )}

@@ -13,14 +13,14 @@ export default function EducationPage() {
         as="h1"
         defaultText={educationHeadings.education.default}
         hoverText={educationHeadings.education.hover}
-        className="text-[20px] font-medium leading-[1.3] text-ink"
+        className="text-[18px] font-medium leading-[1.3] text-ink sm:text-[20px]"
       />
 
       <div className="mt-4 flex flex-col gap-6">
         {education.schools.map((school) => (
           <div
             key={school.lines[0]}
-            className="text-[16px] leading-[1.62] text-ink-muted opacity-85"
+            className="text-[15px] leading-[1.62] text-ink-muted opacity-85 sm:text-[16px]"
           >
             {school.lines.map((line) => (
               <p key={line}>{line}</p>
@@ -33,17 +33,17 @@ export default function EducationPage() {
         as="h2"
         defaultText={educationHeadings.skills.default}
         hoverText={educationHeadings.skills.hover}
-        className="mt-12 text-[20px] font-medium leading-[1.3] text-ink"
+        className="mt-10 text-[18px] font-medium leading-[1.3] text-ink sm:mt-12 sm:text-[20px]"
       />
 
       <div className="mt-4 flex flex-col gap-4">
         {education.skills.map((skill) => (
           <div
             key={skill.label}
-            className="text-[16px] leading-[1.62] text-ink-muted opacity-85"
+            className="text-[15px] leading-[1.62] text-ink-muted opacity-85 sm:text-[16px]"
           >
             <p>{skill.label}</p>
-            <p>{skill.value}</p>
+            <p className="break-words">{skill.value}</p>
           </div>
         ))}
       </div>
