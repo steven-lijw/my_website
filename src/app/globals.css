@@ -33,3 +33,84 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* —— Home doodle motion (Figma: 4.5s ease-in-out loop) —— */
+
+.home-doodle {
+  animation: home-enter 0.9s ease-out both;
+}
+
+.home-doodle__person {
+  animation: home-person 4.5s ease-in-out infinite;
+  transform-origin: 50% 80%;
+  will-change: transform;
+}
+
+.home-doodle__bubble {
+  animation: home-bubble 4.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes home-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* thinking-person: rotate [0, 1.2, -0.9, 0], y [0, -3, 1.5, 0] */
+@keyframes home-person {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  24.44% {
+    transform: rotate(1.2deg) translateY(-4px);
+  }
+  31.11% {
+    transform: rotate(0.8deg) translateY(-3px);
+  }
+  57.78% {
+    transform: rotate(-0.9deg) translateY(2px);
+  }
+  62.22% {
+    transform: rotate(-0.5deg) translateY(1.5px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+}
+
+/* Thought bubble: rotate [2.5, 3.6, 1.7, 2.5], y [0, -3, 0] */
+@keyframes home-bubble {
+  0% {
+    transform: rotate(2.5deg) translateY(0);
+  }
+  35.56% {
+    transform: rotate(3.6deg) translateY(-4px);
+  }
+  51.11% {
+    transform: rotate(2.8deg) translateY(-5px);
+  }
+  71.11% {
+    transform: rotate(1.7deg) translateY(-2px);
+  }
+  100% {
+    transform: rotate(2.5deg) translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-doodle,
+  .home-doodle__person,
+  .home-doodle__bubble {
+    animation: none;
+  }
+
+  .home-doodle__bubble {
+    transform: rotate(2.5deg);
+  }
+}
