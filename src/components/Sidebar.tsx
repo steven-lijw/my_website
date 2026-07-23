@@ -22,7 +22,7 @@ export function Sidebar() {
           {site.name}
         </span>
         <span
-          className="site-wordmark__home col-start-1 row-start-1 self-center text-[18px] font-normal leading-[1.1] tracking-[-0.2px] whitespace-nowrap text-ink/75 opacity-0 blur-[1.5px] transition-[opacity,transform,filter] duration-[240ms] ease-[cubic-bezier(0.22,1,0.36,1)] -translate-y-0.5 group-hover:translate-y-0 group-hover:opacity-100 group-hover:blur-0"
+          className="site-wordmark__home col-start-1 row-start-1 self-center text-[24px] font-normal leading-[1.1] tracking-[-0.3px] whitespace-nowrap text-ink/75 opacity-0 blur-[1.5px] transition-[opacity,transform,filter] duration-[240ms] ease-[cubic-bezier(0.22,1,0.36,1)] -translate-y-0.5 group-hover:translate-y-0 group-hover:opacity-100 group-hover:blur-0"
           aria-hidden
         >
           back homeeee...
