@@ -52,6 +52,8 @@ a {
 
 .home-doodle__bubble {
   animation: home-bubble 4.5s ease-in-out infinite;
+  /* pivot near the trail so the cloud floats from the head connection */
+  transform-origin: 92% 100%;
   will-change: transform;
 }
 
