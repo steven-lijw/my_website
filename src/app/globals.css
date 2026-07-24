@@ -45,6 +45,19 @@ a {
   text-decoration: none;
 }
 
+/* Soft selection — stays minimal, no loud brand color */
+::selection {
+  background: #e8e8e8;
+  color: #111111;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hover-note__panel {
+    transition: opacity 0.12s ease !important;
+    transform: none !important;
+  }
+}
+
 /* Wordmark hover: soft crossfade (duration also via Tailwind) */
 .site-wordmark:focus-visible {
   outline: 1.5px solid var(--color-ink);
@@ -75,6 +88,7 @@ a {
   /* pivot near the seat so the head stays clear of the bubble */
   transform-origin: 50% 85%;
   will-change: transform;
+  transition: filter 0.28s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .home-doodle__bubble {
@@ -82,6 +96,26 @@ a {
   /* pivot near the trail so the cloud floats from the head connection */
   transform-origin: 92% 100%;
   will-change: transform;
+}
+
+/* Near: gentle lift via filter/wrapper — keep loop animations intact */
+.home-doodle--near .home-doodle__person {
+  animation-name: home-person-near;
+}
+
+.home-doodle--near .home-doodle__bubble {
+  animation-name: home-bubble-near;
+}
+
+/* Poke: one-shot jolt layered as a short alternate animation */
+.home-doodle--poke .home-doodle__person {
+  animation: home-person-poke 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.home-doodle:focus-visible {
+  outline: 1.5px solid var(--color-ink);
+  outline-offset: 6px;
+  border-radius: 4px;
 }
 
 @keyframes home-enter {
@@ -136,10 +170,68 @@ a {
   }
 }
 
+/* Near variants: same timing, slightly taller / more alert */
+@keyframes home-person-near {
+  0% {
+    transform: rotate(0.4deg) translateY(-2px);
+  }
+  24.44% {
+    transform: rotate(1.4deg) translateY(-5px);
+  }
+  31.11% {
+    transform: rotate(1deg) translateY(-4px);
+  }
+  57.78% {
+    transform: rotate(-0.3deg) translateY(-1px);
+  }
+  62.22% {
+    transform: rotate(0deg) translateY(-1px);
+  }
+  100% {
+    transform: rotate(0.4deg) translateY(-2px);
+  }
+}
+
+@keyframes home-bubble-near {
+  0% {
+    transform: rotate(2.8deg) translateY(-3px) scale(1.03);
+  }
+  35.56% {
+    transform: rotate(3.6deg) translateY(-7px) scale(1.03);
+  }
+  51.11% {
+    transform: rotate(3deg) translateY(-8px) scale(1.03);
+  }
+  71.11% {
+    transform: rotate(2.2deg) translateY(-5px) scale(1.03);
+  }
+  100% {
+    transform: rotate(2.8deg) translateY(-3px) scale(1.03);
+  }
+}
+
+@keyframes home-person-poke {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  25% {
+    transform: rotate(-2.2deg) translateY(2px);
+  }
+  55% {
+    transform: rotate(1.8deg) translateY(-3px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .home-doodle,
   .home-doodle__person,
-  .home-doodle__bubble {
+  .home-doodle__bubble,
+  .home-doodle--near .home-doodle__person,
+  .home-doodle--near .home-doodle__bubble,
+  .home-doodle--poke .home-doodle__person {
     animation: none;
   }
 

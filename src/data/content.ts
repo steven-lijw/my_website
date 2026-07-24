@@ -25,18 +25,47 @@ export const playfulCorners: Record<string, string> = {
 };
 
 export const home = {
-  bubble:
-    "hi, i'm Steven - building with data, product, and GenAI.",
+  bubble: "hi, i'm Steven - building with data, product, and GenAI.",
+  pokeLines: [
+    "hey.",
+    "ow. soft ow.",
+    "okay that was fun.",
+    "product people get poked too.",
+    "hi again. still me.",
+  ],
 };
 
-export const aboutParagraphs = [
-  "i studied business and computer science, and somewhere along the way ai quietly took over my curiosity. these days i'm especially into ai products - i poke at new ones almost every day, just to see how they feel.",
-  "i also care a lot about architecture and graphic design. that's a big reason i tried product management - it sits right where tech, taste, and how things feel all meet.",
-  "i'm still figuring out the rest of the path, too. my final year project is in reinforcement learning for day trading - a bit different from product work, and i'm enjoying the stretch.",
-  "outside of work and school, i travel a lot. during my semester in amsterdam i wandered through thirteen countries across europe - germany, norway, france, the uk, and more. the wildest stop was longyearbyen, one of the northernmost places people actually live. the trips matter, but so do the people i meet along the way.",
-  "oh, and i like trying slightly random sports - climbing, ultimate frisbee, whatever sounds fun that week.",
-  "anyway - if any of this sounds fun, come say hi. we can build stuff, travel, or just hang. no agenda requiredddd.",
-];
+export const about = {
+  paragraphs: [
+    "i studied business and computer science, and somewhere along the way ai quietly took over my curiosity. these days i'm especially into ai products - i poke at new ones almost every day, just to see how they feel.",
+    "i also care a lot about architecture and graphic design. that's a big reason i tried product management - it sits right where tech, taste, and how things feel all meet.",
+    "i'm still figuring out the rest of the path, too. my final year project is in reinforcement learning for day trading - a bit different from product work, and i'm enjoying the stretch.",
+    // travel paragraph rendered with longyearbyen HoverNote in about page
+    {
+      type: "travel" as const,
+      before:
+        "outside of work and school, i travel a lot. during my semester in amsterdam i wandered through thirteen countries across europe - germany, norway, france, the uk, and more. the wildest stop was ",
+      noteTerm: "longyearbyen",
+      note: "yes that far north",
+      after:
+        ", one of the northernmost places people actually live. the trips matter, but so do the people i meet along the way.",
+    },
+    "oh, and i like trying slightly random sports - climbing, ultimate frisbee, whatever sounds fun that week.",
+    // closing paragraph: plain link to contact
+    {
+      type: "closing" as const,
+      before: "anyway - if any of this sounds fun, ",
+      linkLabel: "come say hi",
+      after: ". we can build stuff, travel, or just hang. no agenda requiredddd.",
+    },
+  ],
+};
+
+export type SkillPart = { text: string; /** in-place hover swap, not a tooltip */ hover?: string };
+
+export type SkillRow =
+  | { label: string; kind: "text"; value: string }
+  | { label: string; kind: "parts"; parts: SkillPart[] };
 
 export const education = {
   schools: [
@@ -59,18 +88,25 @@ export const education = {
   skills: [
     {
       label: "Languages",
-      value: "Mandarin · Cantonese · English",
+      kind: "parts" as const,
+      parts: [
+        { text: "Mandarin" },
+        { text: "Cantonese", hover: "慢慢嚟" },
+        { text: "English" },
+      ],
     },
     {
       label: "Programming",
+      kind: "text" as const,
       value: "Python, Java, SQL, R, TypeScript, JavaScript, HTML, CSS",
     },
     {
       label: "Tools",
+      kind: "text" as const,
       value:
         "Git / GitHub, Docker, Google Cloud, Azure OpenAI, Power BI, Oracle, PostgreSQL, Figma",
     },
-  ],
+  ] satisfies SkillRow[],
 };
 
 export const works = [

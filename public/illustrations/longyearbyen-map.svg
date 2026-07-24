@@ -1,0 +1,119 @@
+<svg width="168" height="148" viewBox="0 0 168 148" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <!-- hand-drawn outer frame -->
+  <path
+    d="M11 16C10 11 15 7 24 6C52 4 96 3 128 6C146 7 157 11 158 22C160 48 159 86 157 112C156 126 148 138 132 139C100 142 56 141 30 137C16 135 10 126 10 112C8 84 8 48 11 16Z"
+    fill="white"
+    stroke="#111111"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- sketchy second stroke on frame corner -->
+  <path
+    d="M18 20C22 14 36 11 52 10"
+    stroke="#111111"
+    stroke-width="0.7"
+    stroke-linecap="round"
+    opacity="0.3"
+  />
+
+  <!-- globe outline (wonky circle) -->
+  <path
+    d="M84 26C110 26 130 40 135 64C140 88 128 114 102 121C78 128 50 118 40 94C30 70 42 38 68 28C74 26 79 26 84 26Z"
+    fill="#fafafa"
+    stroke="#111111"
+    stroke-width="1.4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- faint latitude rings -->
+  <path d="M46 56C62 48 104 46 124 56" stroke="#111111" stroke-width="0.7" stroke-linecap="round" opacity="0.28"/>
+  <path d="M42 78C64 70 106 70 126 80" stroke="#111111" stroke-width="0.7" stroke-linecap="round" opacity="0.25"/>
+  <path d="M48 100C70 108 104 110 122 100" stroke="#111111" stroke-width="0.7" stroke-linecap="round" opacity="0.25"/>
+
+  <!-- Americas -->
+  <path
+    d="M52 52C58 46 66 48 68 58C70 70 66 86 60 96C56 104 48 102 46 92C44 78 46 60 52 52Z"
+    stroke="#111111"
+    stroke-width="1.15"
+    stroke-linejoin="round"
+    fill="none"
+  />
+  <path
+    d="M58 98C62 108 64 116 58 120C52 116 54 106 56 100"
+    stroke="#111111"
+    stroke-width="1.1"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Europe -->
+  <path
+    d="M78 54C86 50 94 52 96 62C98 72 92 80 86 84C80 86 74 80 74 70C74 60 74 56 78 54Z"
+    stroke="#111111"
+    stroke-width="1.15"
+    stroke-linejoin="round"
+    fill="none"
+  />
+  <!-- Africa -->
+  <path
+    d="M82 86C88 96 90 110 84 118C76 114 76 100 80 90"
+    stroke="#111111"
+    stroke-width="1.1"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Asia -->
+  <path
+    d="M100 50C114 46 126 54 128 70C130 86 120 102 106 104C96 106 92 94 94 80C96 66 96 54 100 50Z"
+    stroke="#111111"
+    stroke-width="1.15"
+    stroke-linejoin="round"
+    fill="none"
+  />
+
+  <!-- Arctic circle (dashed scribble) -->
+  <path
+    d="M58 44C72 36 98 34 114 44"
+    stroke="#111111"
+    stroke-width="1.05"
+    stroke-linecap="round"
+    stroke-dasharray="2.2 3.2"
+    opacity="0.6"
+  />
+
+  <!-- North pole cross + N -->
+  <path d="M84 30V38" stroke="#111111" stroke-width="1.25" stroke-linecap="round"/>
+  <path d="M80 34H88" stroke="#111111" stroke-width="1.25" stroke-linecap="round"/>
+  <path d="M92 27V36" stroke="#111111" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M92 27L97 36" stroke="#111111" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M97 27V36" stroke="#111111" stroke-width="1.1" stroke-linecap="round"/>
+
+  <!-- Longyearbyen pin — just under the pole, a little east -->
+  <circle cx="91" cy="41" r="7" stroke="#111111" stroke-width="0.95" fill="none" opacity="0.4"/>
+  <circle cx="91" cy="41" r="3.4" fill="#111111"/>
+  <!-- sparkle -->
+  <path d="M91 31.5V34.5" stroke="#111111" stroke-width="0.95" stroke-linecap="round" opacity="0.75"/>
+  <path d="M99 39H102" stroke="#111111" stroke-width="0.95" stroke-linecap="round" opacity="0.75"/>
+  <path d="M98 34.5L100 32.5" stroke="#111111" stroke-width="0.9" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- hand arrow callout -->
+  <path
+    d="M98 44C108 50 118 54 126 48C132 44 134 52 128 58C122 64 110 64 104 58"
+    stroke="#111111"
+    stroke-width="1.1"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+  <path
+    d="M106 54L102 60L110 58"
+    stroke="#111111"
+    stroke-width="1.05"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+</svg>

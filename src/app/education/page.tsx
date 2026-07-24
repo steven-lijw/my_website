@@ -43,7 +43,26 @@ export default function EducationPage() {
             className="text-[15px] leading-[1.62] text-ink-muted opacity-85 sm:text-[16px]"
           >
             <p>{skill.label}</p>
-            <p className="break-words">{skill.value}</p>
+            {skill.kind === "parts" ? (
+              <p className="break-words">
+                {skill.parts.map((part, i) => (
+                  <span key={part.text}>
+                    {i > 0 ? " · " : null}
+                    {part.hover ? (
+                      <HoverSwap
+                        defaultText={part.text}
+                        hoverText={part.hover}
+                        className="justify-items-center"
+                      />
+                    ) : (
+                      part.text
+                    )}
+                  </span>
+                ))}
+              </p>
+            ) : (
+              <p className="break-words">{skill.value}</p>
+            )}
           </div>
         ))}
       </div>
