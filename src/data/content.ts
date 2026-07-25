@@ -115,9 +115,9 @@ export const works = [
     dates: "Jun 2026 - Aug 2026",
     location: "Hong Kong SAR, China",
     bullets: [
-      "AI Content Generation: LLM content system for social channels, drafts with brand voice.",
-      "Workflow Automation: End-to-end automation cutting manual production for marketing teams.",
-      "Innovation Delivery: GenAI prototypes turned into practical internal tools for operations.",
+      "Innovation Portfolio Digitization: 247 Excel records → Notion with AI cleansing; semantic-search skill after UAT.",
+      "Agent Workflow Integration: 3 Slack/Teams agents for AI briefings and project support; SharePoint/Notion/MCP.",
+      "Product Commercialization: Part-time shift scheduler for events; requirements, budget, and revenue forecast deck.",
     ],
   },
   {
