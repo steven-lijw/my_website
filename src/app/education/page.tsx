@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function EducationPage() {
   return (
-    <div className="flex max-w-[660px] flex-col">
+    <div className="flex max-w-[820px] flex-col">
       <HoverSwap
         as="h1"
         defaultText={educationHeadings.education.default}
@@ -61,7 +61,7 @@ export default function EducationPage() {
                 ))}
               </p>
             ) : (
-              <p className="break-words">{skill.value}</p>
+              <p className="sm:whitespace-nowrap">{skill.value}</p>
             )}
           </div>
         ))}
